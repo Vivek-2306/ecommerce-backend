@@ -1,15 +1,15 @@
 import express, { Request, Response } from "express";
 import { SERVER_PORT } from "./config/Config";
 import connectDB from "./services/DBService";
+import bodyParser from "body-parser";
+import { AppRoutes } from "./routes/AppRoutes";
 
 const app = express();
 
 app.use(express.json());
-app.get("/", (req: Request, res: Response) => {
-  res.json({
-    message: "Hello Express JS",
-  });
-});
+app.use(bodyParser.json());
+
+app.use(AppRoutes);
 
 app.listen(SERVER_PORT, () => {
   connectDB()
