@@ -19,5 +19,8 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: 'module',
   },
-  rules: {},
+  rules: {
+    '@typescript-eslint/no-unused-vars': 'error',
+    '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
+  },
 }
