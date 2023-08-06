@@ -49,6 +49,6 @@
     "typescript": "^5.1.6"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix"
+    "*/*.{js,ts,json}": "eslint --cache --fix"
   }
 }
