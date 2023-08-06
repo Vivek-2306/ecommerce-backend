@@ -14,7 +14,7 @@ app.use(AppRoutes)
 app.listen(SERVER_PORT, () => {
   connectDB()
     .then(() => {
-      console.log(`Server is running on port ${SERVER_PORT}`)
+      console.log(`Server is running on port  ${SERVER_PORT}`)
     })
     .catch((error: any) => console.error(error))
 })
