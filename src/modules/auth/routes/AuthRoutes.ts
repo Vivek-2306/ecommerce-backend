@@ -1,11 +1,11 @@
-import express, { Request, Response } from "express";
+import express, { Request, Response } from 'express'
 
-const router = express.Router();
+const router = express.Router()
 
-router.get("/login", (req: Request, res: Response) => {
+router.get('/login', (req: Request, res: Response) => {
   res.json({
-    message: "Login GET",
-  });
-});
+    message: 'Login GET',
+  })
+})
 
-export default router;
+export default router
